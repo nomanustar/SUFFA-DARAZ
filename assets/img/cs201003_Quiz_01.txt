@@ -1,0 +1,100 @@
+ID: cs201003
+Name: Abdul Malik
+SECTION: 4B1
+
+Table DATA
+--------------------------------------
+mysql> SELECT* FROM emp;
++-------------+----------------+----------------+-----------------+--------------+------------+--------+
+| employee_id | employee_fname | employee_lname | employee_gender | employee_age | department | salary |
++-------------+----------------+----------------+-----------------+--------------+------------+--------+
+|         451 | Ali            | Jhangir        | M               |           42 | admin      |   5000 |
+|         456 | Ahmed          | Jhangir        | M               |           23 | admin      |   6000 |
+|         121 | Ali            | Jhangir        | M               |           66 | Library    |  15000 |
+|         660 | Zeeshan        | Waqas          | M               |           31 | Faculty    |  50000 |
+|         885 | paul           | alex           | M               |           30 | NTS        |  10000 |
+|         662 | Kim            | liam           | F               |           25 | Faculty    |  40000 |
+|         151 | Lina           | Zane           | F               |           28 | Faculty    |  20000 |
++-------------+----------------+----------------+-----------------+--------------+------------+--------+
+7 rows in set (0.00 sec)
+
+
+ANSWERS STARTS FROM HERE
+------------------------
+
+
+1)
+mysql> SELECT  employee_fname,age,department FROM emp WHERE NOT employee_gender= 'M' || age>30;
++----------------+------+------------+
+| employee_fname | age  | department |
++----------------+------+------------+
+| Ali            |   42 | admin      |
+| Ali            |   66 | Library    |
+| Zeeshan        |   31 | Faculty    |
+| Kim            |   25 | Faculty    |
+| Lina           |   28 | Faculty    |
++----------------+------+------------+
+5 rows in set, 1 warning (0.00 sec)
+
+
+2)
+mysql> SELECT employee_fname,department,salary FROM emp WHERE employee_lname LIKE '%i%';
++----------------+------------+--------+
+| employee_fname | department | salary |
++----------------+------------+--------+
+| Ali            | admin      |   5000 |
+| Ahmed          | admin      |   6000 |
+| Ali            | Library    |  15000 |
+| Kim            | Faculty    |  40000 |
++----------------+------------+--------+
+
+3)
+mysql> SELECT employee_id,employee_fname FROM emp WHERE employee_id%2 = 0;
++-------------+----------------+
+| employee_id | employee_fname |
++-------------+----------------+
+|         456 | Ahmed          |
+|         660 | Zeeshan        |
+|         662 | Kim            |
++-------------+----------------+
+3 rows in set (0.03 sec)
+
+
+4)
+mysql> ALTER TABLE emp CHANGE employee_age age INT;
+Query OK, 0 rows affected (0.07 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE emp;
++-----------------+-------------+------+-----+---------+-------+
+| Field           | Type        | Null | Key | Default | Extra |
++-----------------+-------------+------+-----+---------+-------+
+| employee_id     | int(11)     | YES  |     | NULL    |       |
+| employee_fname  | varchar(40) | YES  |     | NULL    |       |
+| employee_lname  | varchar(40) | YES  |     | NULL    |       |
+| employee_gender | varchar(10) | YES  |     | NULL    |       |
+| age             | int(11)     | YES  |     | NULL    |       |
+| department      | varchar(10) | YES  |     | NULL    |       |
+| salary          | int(11)     | YES  |     | NULL    |       |
++-----------------+-------------+------+-----+---------+-------+
+
+5)
+mysql> UPDATE emp
+    -> SET salary = 16000
+    -> WHERE department = 'admin' || age>35;
+Query OK, 3 rows affected, 1 warning (0.03 sec)
+Rows matched: 3  Changed: 3  Warnings: 1
+
+mysql> SELECT* FROM emp;
++-------------+----------------+----------------+-----------------+------+------------+--------+
+| employee_id | employee_fname | employee_lname | employee_gender | age  | department | salary |
++-------------+----------------+----------------+-----------------+------+------------+--------+
+|         451 | Ali            | Jhangir        | M               |   42 | admin      |  16000 |
+|         456 | Ahmed          | Jhangir        | M               |   23 | admin      |  16000 |
+|         121 | Ali            | Jhangir        | M               |   66 | Library    |  16000 |
+|         660 | Zeeshan        | Waqas          | M               |   31 | Faculty    |  50000 |
+|         885 | paul           | alex           | M               |   30 | NTS        |  10000 |
+|         662 | Kim            | liam           | F               |   25 | Faculty    |  40000 |
+|         151 | Lina           | Zane           | F               |   28 | Faculty    |  20000 |
++-------------+----------------+----------------+-----------------+------+------------+--------+
+7 rows in set (0.00 sec)

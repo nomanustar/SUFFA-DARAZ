@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+
+} 
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+.d-flex{
+    display: flex;
+}
+.align-item-centre{
+    align-items: center;
+}
+.game{
+    margin-top: 5px; ;
+}
+.font-20{
+    font-size: 12px;
+    margin-right: 40px ; 
+
+}
+header{
+    background-color: rgb(206, 206, 206);
+    height: 30px;
+}
+a{
+    text-decoration: none; 
+   color: black;
+   font-family: Roboto-Regular;
+}
+.lal{
+   
+    font-family: Roboto-Regular;
+    color: #f85606;
+}
+.font{
+    margin-left: 370px;
+}
+a:hover{
+    color: #f85606;
+}
+.imag{
+    width: 135px;
+    height: 41px ;
+}
+.imeg{
+    width: 80px ;
+    height: 44px ;
+} 
+.imig{
+    width: 188px;
+    height: 45px;
+}
+.conatiner{
+    width: 1188px;
+    margin: auto ; 
+    
+}
+.justify-content{
+    justify-content: space-between;
+}
+.nomi{
+    width: 700px;
+    height: 43px; 
+    font-size: 15px;
+    border: none;
+    background-color: antiquewhite; 
+    padding-left: 20px;
+} 
+.life{
+    margin-top: 20px;
+}
+.boxx{
+    width: 350px;
+    height: 100px;
+    border: 1px solid gray; 
+    padding-top:  20px; 
+    padding-left: 15px;
+    margin-top: 40px;
+}
+.boox{
+    margin-top: 30px;
+    font-size: 40px;
+    line-height: 1.25rem;
+    font-weight: 300;
+}
+.para{
+    margin-top: 5px;
+}
+.immmg{
+    width: 300px;
+    height: 250px; 
+    margin-top: 30px;
+}
+.samm{
+    font-size: 22px;
+    font-weight: 400; 
+    margin-top: 50px;
+    margin-right: 40px;
+}
+.con{
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.sind{
+    margin-top: 10px;
+     color: #202020;
+}
+.coll{
+    background-color: #999e9e;
+    
+    width: 400px;
+}
+.price{
+    margin-top: 20px;
+    font-size: 30px;
+    color: #f57224;
+}
+hr{
+    margin-top: 10px;  
+  
+}
+.star{
+    width: 12px;
+    height: 12px;
+}
+.starimg{
+    margin-top: 25px;
+}
+.rating{
+    color: #16849b;
+}
+.rating:hover{
+    color: #16849b;
+    text-decoration:underline;
+}
+.rate:hover{
+    color: #16849b;
+    text-decoration:underline;
+} 
+.buy{
+    margin-top: 30px; 
+    margin-left: 90px; 
+}
+.batan{
+    width: 170px;
+    height: 40px; 
+    background-color: #2abbe8; 
+    border: 1px solid #2abbe8; 
+    border-radius: 10px;
+}
+.battan{
+    width: 170px;
+    height: 40px;
+    background-color: #f57224;
+    border: 1px solid #f57224;
+    border-radius: 10px;
+}
+.rs{
+    margin-left: 10px;
+}
+.qrcodee{
+    width: 100px;
+    height: 100px;
+}
+.qrcode{
+    margin-left: 10px;
+}
+.colloum{
+    margin-left: 200px;
+   
+}
+.roow{
+    margin-top: 20px;
+    margin-left: 100px; 
+    padding-top: 70px;
+   
+}
+.connn{
+    background-color: #2e2e54;  
+    height: 500px;
+   
+}
+.first{
+    font-size: 19px; 
+    margin-top: -10px;
+    padding: 20px; 
+    margin-left: -25px;
+    color: #fff;
+}
+.firsts{
+    font-size: 19px; 
+    margin-top: -10px;
+    padding: 20px; 
+    margin-left: -23px; 
+    color: #fff;
+}
+.lii{
+    font-weight: 200;
+    line-height: 26px;
+    list-style: none;
+    color: #fff;
+}
+.anchor{
+    color: #fff;
+}
+.downlod{
+    margin-left: 10px; 
+    margin-top: 40px;
+
+}
+.downlods{
+    width: 42px;
+    height: 42px;
+    margin-top: -46px;
+}
+.happy{
+    color: #f85606 ;
+    font-weight: 500;
+}
+.happys{
+    color: #e4e4e4 ;
+    font-weight: 500;
+}
+.heig{
+    width: 120px;
+    height: 40px;
+    background-color: #2e2e54;
+}
