@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+
+} 
+body{
+    background-color: rgb(224, 224, 224);
+}
+
+.d-flex{
+    display: flex;
+}
+.align-item-centre{
+    align-items: center;
+}
+.game{
+    margin-top: 5px; ;
+}
+.font-20{
+    font-size: 12px;
+    margin-right: 40px ; 
+
+}
+header{
+    background-color: rgb(206, 206, 206);
+    height: 30px;
+}
+a{
+    text-decoration: none; 
+   color: black;
+   font-family: Roboto-Regular;
+}
+.lal{
+   
+    font-family: Roboto-Regular;
+    color: #f85606;
+}
+.font{
+    margin-left: 370px;
+}
+a:hover{
+    color: #f85606;
+}
+.imag{
+    width: 135px;
+    height: 41px ;
+}
+.imeg{
+    width: 80px ;
+    height: 44px ;
+} 
+.imig{
+    width: 188px;
+    height: 45px;
+}
+.conatiner{
+    width: 1188px;
+    margin: auto ;
+}
+.justify-content{
+    justify-content: space-between;
+}
+.nomi{
+    width: 700px;
+    height: 43px; 
+    font-size: 15px;
+    border: none;
+    background-color: antiquewhite; 
+    padding-left: 20px;
+} 
+.life{
+    margin-top: 20px;
+}
+.banner{
+    width: 1188px;
+    height: 348px;
+    width: 100%;
+  
+}
+.mati{
+    width: 172px;
+    font-family: Roboto-Regular;
+    font-size: 13px;
+    line-height: 27px;
+    color: #757575;
+  
+    margin-left: 90px;
+    background-color: white; 
+    height: 350px; 
+    padding-left: 10px;
+}
+ul >li{
+    list-style: none;
+}
+.bg{
+     background-color: rgb(195, 250, 233);
+     margin-top: 19px;
+     height: 348px;
+}
+ul > li:hover{
+    color: #1a9cb7;
+}
+.imageee{
+    width: 50px;
+    height: 40px; 
+}
+.imge{
+    width: 388px;
+    background-color: rgb(253, 253, 253);
+    border-radius: 30px; 
+    margin-top: 10px;
+}
+.box{
+    margin-left: 5px;
+}
+.box2{
+    margin-left: 11px;
+}
+.box3{
+    margin-left: 11px;
+}
+.imge:hover{
+    background-color: #c0bdbc; 
+    color: aqua;
+  
+}
+.product1{
+    width: 270px;
+    height: 200px ;
+}
+.product-naame{
+margin-top: 20px ; 
+font-size: 40px;
+}
+.sam1{
+    width: 270px;
+    height: 320px;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+.rs{
+    font-size: 20px;
+}
+.price{
+    margin-top: 10px;
+    color: #f85606;
+}
+.call{
+    margin-top: 45px;
+}
+.price:hover{
+    color: #1a9cb7;
+  
+    transition: 6s;
+}
+.sam1:hover{
+    box-shadow: #757575 10px 9px 20px;
+    border: 1px solid #c0bdbc;
+    margin-top: 12px;
+    justify-content: space-between;
+     transition: 0.5s;
+    transform: scale(1.01);
+}
