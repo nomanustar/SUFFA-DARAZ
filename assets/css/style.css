@@ -34,7 +34,7 @@ header{
 }
 .header{
     margin-top: 40px; 
-    position: fixed;
+    /* position: fixed; */
 }
 a{
     text-decoration: none; 
