@@ -4,9 +4,9 @@
 
 } 
 header{
-    position: fixed;
-    width: 100%; 
-    margin-top: -10px;
+    /* position: fixed; */
+    /* width: 100%;  */
+    
 } 
 body{
     background-color: rgb(224, 224, 224); 
